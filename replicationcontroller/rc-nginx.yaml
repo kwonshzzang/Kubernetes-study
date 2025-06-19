@@ -1,0 +1,17 @@
+apiVersion: v1
+kid: ReplicationController
+metadata:
+  name: rc-nginx
+spec:
+  replicas: 3
+  selector:
+    app: webui
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+      spec:
+        containers:
+          - name: nginx-controller
+            image: nginx
