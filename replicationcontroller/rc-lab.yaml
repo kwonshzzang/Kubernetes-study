@@ -10,9 +10,9 @@ spec:
     metadata:
       name: mainui-pod
       labels:
-        - name: apache
-        - app: main
-        - rel: stable
+        name: apache
+        app: main
+        rel: stable
     spec:
       containers:
         - name: mainui-container
