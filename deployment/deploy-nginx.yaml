@@ -1,18 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-nginx
+  name: nginx-deployment
+  labels:
+    app: nginx-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webui
+      app: nginx-deployment
   template:
     metadata:
-      name: nginx-pod
+      name: nginx-deployment
       labels:
-        app: webui
+        app: nginx-deployment
     spec:
       containers:
-        - name: nginx-container
-          image: nginx:1.14
+        - name: nginx-deployment
+          image: nginx
+          ports:
+            - containerPort: 80
