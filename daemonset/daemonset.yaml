@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: fluentd-elasticsearch
-          image: fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch
+          image: fluent/fluentd-kubernetes-daemonset:v1.18-debian-elasticsearch8-1
           env:
             - name: testenv
               value: value
