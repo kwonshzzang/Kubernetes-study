@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      k8s-app: fluentd-logging
+      name: fluentd-elasticsearch
   updateStrategy:
     type: RollingUpdate
   template:
