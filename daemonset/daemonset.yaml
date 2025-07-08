@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: fluentd-elasticsearch
-          image: fluent/fluentd-kubernetes-daemonset:elasticsearch
+          image: nginx
           env:
             - name: testenv
               value: value
