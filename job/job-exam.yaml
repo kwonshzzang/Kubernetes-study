@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: centos-container
-          image: centos:7
+          image: centos
           command: ["bash"]
           args:
             - "-c"
