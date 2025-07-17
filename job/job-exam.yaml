@@ -16,5 +16,5 @@ spec:
             - "-c"
             - "echo 'Hello World'; sleep 50; echo 'Bye'"
       restartPolicy: Never
-#      restartPolicy: onFailure
+#      restartPolicy: OnFailure
 #  backoffLimit: 3
